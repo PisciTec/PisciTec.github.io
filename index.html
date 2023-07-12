@@ -1,11 +1,19 @@
+<!DOCTYPE html>
 <html>
-    <head> 
-       <title>Teste da Página</title>  
-    </head>
-    <body>
-        <header><h1>PISCS</h1></header>
-        <h2>
-            Bem vindos a minha humilde página
-        </h2>
-    </body>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #ECECEC">
+        <a-assets>
+          <a-asset-item id="bench-obj" src="https://cdn.glitch.global/766e9afe-c63f-4454-8df4-ccd8609d8ec0/Bench%20N111021.obj?v=1684346204050"></a-asset-item>
+          <a-asset-item id="bench-mtl" src="https://cdn.glitch.global/766e9afe-c63f-4454-8df4-ccd8609d8ec0/Bench%20N111021.mtl?v=1684344219284"></a-asset-item>
+        </a-assets>
+        <a-entity obj-model="obj: #bench-obj;" scale="0.01 0.01 0.01" position="0 -20 -30"></a-entity>
+
+        <a-gltf-model src="https://cdn.glitch.global/766e9afe-c63f-4454-8df4-ccd8609d8ec0/kid.glb?v=1684457386053" scale="3 3 3" position="0 -15 -30"></a-gltf-model>
+      
+      </a-scene>
+  </body>
 </html>
